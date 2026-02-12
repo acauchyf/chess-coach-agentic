@@ -1,18 +1,137 @@
-# Node / Next
-node_modules/
-web/**/node_modules/
-.next/
-out/
-dist/
-*.log
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.iml
 
-# env
+# =========================
+# Secrets / env
+# =========================
 .env
 .env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.crt
 
-node_modules/
-web/**/node_modules/
-.next/
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+.coverage
+coverage.xml
+htmlcov/
 dist/
-out/
+build/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.venv/
+venv/
+ENV/
+env/
+.poetry/
+poetry.lock
+Pipfile.lock
 
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+*.out
+
+# =========================
+# SQLite / local data
+# =========================
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+data/
+storage/
+tmp/
+.cache/
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+uvicorn.log
+
+# =========================
+# Node / Next.js (frontend)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+out/
+dist/
+.turbo/
+.vercel/
+.next/cache/
+*.tsbuildinfo
+
+# Next env
+web/**/.env.local
+web/**/.env.*.local
+
+# =========================
+# Playwright / Cypress (si lo usas)
+# =========================
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+
+# =========================
+# Package managers
+# =========================
+.pnpm-store/
+.yarn/
+.yarnrc.yml
+
+# =========================
+# Docker
+# =========================
+docker-data/
+**/docker-data/
+*.pid
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Archives / Generated
+# =========================
+*.zip
+*.tar
+*.tar.gz
+
+# =========================
+# Project-specific
+# =========================
+# If you store Stockfish binaries or large engines locally
+engines/
+stockfish*
