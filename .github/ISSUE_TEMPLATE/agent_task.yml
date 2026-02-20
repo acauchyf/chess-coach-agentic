@@ -1,0 +1,40 @@
+name: Agent Task
+description: Task to be executed by a specific agent
+title: "[AREA] Short description"
+labels: []
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Assigned Agent
+      options:
+        - agent:tl
+        - agent:devops
+        - agent:backend-senior
+        - agent:backend-mid
+        - agent:frontend
+        - agent:qa
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What must be implemented?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Definition of Done
+      description: Clear acceptance criteria (tests passing, lint ok, etc.)
+    validations:
+      required: true
+
+  - type: textarea
+    id: commands
+    attributes:
+      label: Validation Commands
+      description: Commands to verify locally (pytest, docker compose, etc.)
