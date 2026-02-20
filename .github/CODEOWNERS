@@ -1,10 +1,13 @@
 # Backend
-chess_coach/ @acauchyf
+chess_coach/** @acauchyf
 
-# Infra
-infra/ @acauchyf
-docker-compose.dev.yml @acauchyf
+# Infra / DevOps
 Dockerfile @acauchyf
+docker-compose*.yml @acauchyf
+.github/** @acauchyf
 
-# CI
-.github/ @acauchyf
+# Frontend
+web/** @acauchyf
+
+# Tests / QA
+tests/** @acauchyf
