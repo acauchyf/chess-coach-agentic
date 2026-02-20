@@ -1,0 +1,10 @@
+# Backend
+chess_coach/ @acauchyf
+
+# Infra
+infra/ @acauchyf
+docker-compose.dev.yml @acauchyf
+Dockerfile @acauchyf
+
+# CI
+.github/ @acauchyf
